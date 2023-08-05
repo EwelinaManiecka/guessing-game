@@ -1,6 +1,6 @@
 class Game {
-  constructor({ letterWrapper, categoryWrapper, outputWrapper, wordWrapper }) {
-    this.letterWrapper = letterWrapper;
+  constructor({ lettersWrapper, categoryWrapper, outputWrapper, wordWrapper }) {
+    this.lettersWrapper = lettersWrapper;
     this.categoryWrapper = categoryWrapper;
     this.outputWrapper = outputWrapper;
     this.wordWrapper = wordWrapper;
@@ -12,7 +12,7 @@ class Game {
       const label = (i + 10).toString(36);
       const button = document.createElement("button");
       button.innerHTML = label;
-      this.letterWrapper.appendChild(button);
+      this.lettersWrapper.appendChild(button);
     }
   }
 }
