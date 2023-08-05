@@ -57,6 +57,7 @@ class Game {
 
   guess(letter, event) {
     event.target.disabled = true;
+
     if (this.quote.guess(letter)) {
       this.drawQuote();
     } else {
