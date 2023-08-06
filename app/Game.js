@@ -1,5 +1,4 @@
 import Quote from "./Quote.js";
-
 class Game {
   currentStep = 0;
   lastStep = 7;
@@ -73,6 +72,9 @@ class Game {
       this.quotes[Math.floor(Math.random() * this.quotes.length)];
     this.categoryWrapper.innerHTML = category;
     this.quote = new Quote(text);
+
+    // this.newGameBtn = document.querySelector(".new-game");
+    // this.newGameBtn.addEventListener("click", () => this.restart());
   }
 
   guess(letter, event) {
@@ -103,7 +105,7 @@ class Game {
   }
 
   drawQuote() {
-    const content = this.quote.getContent();
+    const content = this.quote.getContent().toLocaleUpperCase();
     this.wordWrapper.innerHTML = content;
     if (!content.includes("_")) {
       this.winning();
@@ -134,4 +136,5 @@ const game = new Game({
   wordWrapper: document.getElementById("word"),
   outputWrapper: document.getElementById("output"),
 });
+
 game.start();
