@@ -65,7 +65,6 @@ class Game {
       document.getElementsByClassName("step")[
         this.currentStep
       ].style.opacity = 1;
-      document.getElementsByTagName("button").style.opacity = 0.5;
 
       if (this.currentStep === this.lastStep) {
         this.loosing();
