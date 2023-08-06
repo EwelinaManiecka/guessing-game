@@ -10,6 +10,14 @@ class Game {
       category: "Utwór literacki",
     },
     {
+      text: "jezus chrystus",
+      category: "Postać",
+    },
+    {
+      text: "viktor frankl",
+      category: "Postać",
+    },
+    {
       text: "janko muzykant",
       category: "Utwór literacki",
     },
@@ -34,8 +42,20 @@ class Game {
       category: "Poradnik",
     },
     {
-      text: "akademia pana kleksa",
+      text: "Lekarz i dusza",
       category: "Utwór literacki",
+    },
+    {
+      text: "maryja",
+      category: "Postać",
+    },
+    {
+      text: "Biblia",
+      category: "Literatura",
+    },
+    {
+      text: "Wola sensu",
+      category: "Literatura",
     },
     {
       text: "angielski dla leniwych",
